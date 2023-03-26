@@ -29,7 +29,7 @@ db.on("error", (err) => {
 
 app.use("/api/temp", temproute);
 app.use("/api/light", lightroute);
-app.use("/api", (req, res) => {
+app.use("/", (req, res) => {
    res.send("Hello");
 });
 
